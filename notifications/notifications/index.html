@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Уведомления</title>
+</head>
+
+<body>
+    
+    
+
+    <section class="container">
+
+        <!-- ==================Хидер========================= -->
+    <header>
+        <div class="navbar">
+            <div class="logo_header">
+                <a href=""><img src="icons/nav_logo.png" alt=""></a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Поиск">
+                <div class="search_btn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="chat">
+                <i class="fas fa-comment">
+                    <span>99</span>
+                </i>
+                <div class="chat_text" style="display: none;">
+                    <ul>
+                        <li><a href="">Чаты администраторов</a> <br>
+                            Этот чат отвечает за то чтобы мы могли отвечать пользователям на вопросы, и общаться с
+                            каждым
+                            пользователям от имени “Поддержки” (администрации)
+                        </li> <br>
+                        <li><a href="">Чаты пользователей</a> <br>
+                            Этот чат отвечает за то чтобы мы могли видеть все переписки людей между собой и
+                            контролировать
+                            правильность и корректность работы и общения между пользователями, более подробнее еще опишу
+                            ниже
+                            внимательно читаем и смотрим всё и вникаем в логику ТЗ и прототипов, будет трудно но всё
+                            возможно и
+                            зависит от нашего желания!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="img/user4.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- ==================Хидер========================= -->
+    
+    <div class="block">
+
+        <aside class="menu_item">
+            <div class="all_category">
+                Все категории
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="" class="menu_list first_menu">Главная страница</a>
+            <a href="" class="menu_list">Заказы и Вакансии</a>
+            <a href="" class="menu_list">Безопасный платеж</a>
+            <a href="" class="menu_list">Творческая мастерская</a>
+            <a href="" class="menu_list">Реферальная программа</a>
+            <a href="" class="menu_list">Услуги и аукцион </a>
+            <a href="" class="menu_list">Пользователи</a>
+            <a href="" class="menu_list">Верификация</a>
+            <a href="" class="menu_list">Блог и новости </a>
+            <a href="" class="menu_list">Форум</a>
+            <a href="" class="menu_list">Страницы</a>
+            <a href="" class="menu_list">Уведомления </a>
+            <a href="" class="menu_list">Бонусы</a>
+            <a href="" class="menu_list">Работа с почтой</a>
+            <a href="" class="menu_list drop_menu_link_specialization">Специализации</a>
+            <div class="drop_menu_block_specialization">
+                <ul class="drop_menu_specialization">
+                    <li class="drop_menu_specialization_item" data-open="first-section">Категории</li>
+                    <li class="drop_menu_specialization_item" data-open="second-section">Доп.навык</li>
+                    <li class="drop_menu_specialization_item" data-open="third-section">Настройки</li>
+                </ul>
+            </div>
+            <a href="" class="menu_list">SEO- оптимизация</a>
+            <a href="" class="menu_list">Настройка сайта</a>
+        </aside>
+
+ <!-- ==================Нотификации пользователей========================= -->
+ <div class="notifications">
+    <div class="notifications__last">
+        Последние уведомления <b>furqatniyazov</b>
+    </div>
+    <div class="notifications__search">
+        <input type="search" id="user_search" placeholder="id/login/e-mail">
+    </div>
+    <div class="notifications__items">
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-bullhorn'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Напоминание</div>
+                <div class='notifications__text'>Действие вашего тарифа истекает через 1 день!</div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-award'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Достижение</div>
+                <div class='notifications__text'>Вы получили новое достижение "Торговец"!</div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-star'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Рейтинг</div>
+                <div class='notifications__text'>Ваш рейтинг повысилься! Посмотрите новый отзыв от Hamillioner.
+                </div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-gift'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Подарок</div>
+                <div class='notifications__text'>Вы получили подарок от Hamillioner.</div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-exclamation-circle'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Предупреждение</div>
+                <div class='notifications__text'>Не пишите оскорбительные слова в адрес других пользователей!
+                </div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+        <div class='notifications__item'>
+            <div class='img__block fas fa-bullhorn'>
+            </div>
+            <div class='notifications__info'>
+                <div class='notifications__title'>Напоминание</div>
+                <div class='notifications__text'>Действие вашего тарифа истекает через 1 день!</div>
+            </div>
+            <div class='notifications__do'>
+                <div class='edit_btn'><i class='fas fa-pencil-alt'></i></div>
+                <div class='delete'><i class='fas fa-times-circle'></i></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- ==================Уведомления пользователей========================= -->
+
+
+
+<!-- ==================Создание уведомлений========================= -->
+<div class="create">
+
+    <form class="create__form" action="#" method="get">
+        <div class="create__select_icon">
+
+            <div class='create__icon'>
+                <label for="#fa-bullhorn"><i class='fas fa-bullhorn'></i></label>
+                <input type="radio" name="notificons" id='fa-bullhorn' value='fa-bullhorn' class='check_icons'
+                    style='display: none'>
+            </div>
+
+            <div class='create__icon'>
+                <label for="#fa-award"><i class='fas fa-award'></i></label>
+                <input type="radio" name="notificons" id='fa-award' value='fa-award' class='check_icons'
+                    style='display: none'>
+            </div>
+
+            <div class='create__icon'>
+                <label for="#fa-star"><i class='fas fa-star'></i></label>
+                <input type="radio" name="notificons" id='fa-star' value='fa-star' class='check_icons'
+                    style='display: none'>
+            </div>
+
+            <div class='create__icon'>
+                <label for="#fa-gift"><i class='fas fa-gift'></i></label>
+                <input type="radio" name="notificons" id='fa-gift' value='fa-gift' class='check_icons'
+                    style='display: none'>
+            </div>
+
+            <div class='create__icon'>
+                <label for="#fa-exclamation-circle"><i class='fas fa-exclamation-circle'></i></label>
+                <input type="radio" name="notificons" id='fa-exclamation-circle' value='fa-exclamation-circle'
+                    class='check_icons' style='display: none'>
+            </div>
+
+        </div>
+        <div class="create__template">
+            <label for="template">Шаблон</label>
+            <select name="template" id="template">
+                <option value="choose" disabled selected>Выберите шаблон</option>
+                <option value="remind">Напоминание</option>
+                <option value="attainment">Достижение</option>
+                <option value="rating">Рейтинг</option>
+                <option value="gift">Подарок</option>
+                <option value="warning">Предупреждение</option>
+            </select>
+        </div>
+
+        <div class="create__heading">
+            <label for="heading">Заголовок</label>
+            <input type="text" id="heading">
+        </div>
+
+        <div class="create__short_description">
+            <label for="short_description">Краткое описание</label>
+            <textarea id="short_description"></textarea>
+        </div>
+
+        <div class="create__whom">
+
+            Кому
+
+            <input type="radio" name="whom" id="all">
+            <label for="all">
+                <div class="create__all_label label">Все</div>
+            </label>
+
+            <input type="radio" name="whom" id="performers">
+            <label for="performers">
+                <div class="create__performers_label label">Исполнители</div>
+            </label>
+
+            <input type="radio" name="whom" id="customers">
+            <label for="customers">
+                <div class="create__customers_label label">Заказчики</div>
+            </label>
+
+            <input type="radio" name="whom" id="choose">
+            <label for="choose">
+                <div class="create__choose_label label">Выбрать</div>
+            </label>
+
+        </div>
+
+        <div class="create__country">
+            По стране
+            <select name="country" id="country">
+                <option value="select">Выберите страну</option>
+            </select>
+        </div>
+        <div class="create__submit">
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+
+</div>
+<!-- ==================Создание уведомлений========================= -->
+    </div>
+       
+
+
+        <!-- ==================Редактирование уведомления========================= -->
+        <div class="edit">
+
+            <h1 align='center'>Редактирование</h1>
+
+            <div class='close'><i class='fas fa-times-circle'></i></div>
+
+            <form class="edit__form" action="#" method="get">
+
+                <div class="edit__select_icon">
+
+                    <div class='edit__icon'>
+                        <label for="#fa-bullhorn"><i class='fas fa-bullhorn'></i></label>
+                        <input type="radio" name="notificons" id='fa-bullhorn' value='fa-bullhorn' class='check_icons'
+                            style='display: none'>
+                    </div>
+
+                    <div class='edit__icon'>
+                        <label for="#fa-award"><i class='fas fa-award'></i></label>
+                        <input type="radio" name="notificons" id='fa-award' value='fa-award' class='check_icons'
+                            style='display: none'>
+                    </div>
+
+                    <div class='edit__icon'>
+                        <label for="#fa-star"><i class='fas fa-star'></i></label>
+                        <input type="radio" name="notificons" id='fa-star' value='fa-star' class='check_icons'
+                            style='display: none'>
+                    </div>
+
+                    <div class='edit__icon'>
+                        <label for="#fa-gift"><i class='fas fa-gift'></i></label>
+                        <input type="radio" name="notificons" id='fa-gift' value='fa-gift' class='check_icons'
+                            style='display: none'>
+                    </div>
+
+                    <div class='edit__icon'>
+                        <label for="#fa-exclamation-circle"><i class='fas fa-exclamation-circle'></i></label>
+                        <input type="radio" name="notificons" id='fa-exclamation-circle' value='fa-exclamation-circle'
+                            class='check_icons' style='display: none'>
+                    </div>
+
+                </div>
+
+                <div class="create__heading">
+                    <label for="edit__heading">Заголовок</label>
+                    <input type="text" id="edit__heading" value='...'>
+                </div>
+
+                <div class="create__short_description">
+                    <label for="edit__short_description">Краткое описание</label>
+                    <textarea id="edit__short_description">...</textarea>
+                </div>
+
+                <div class="create__submit edit__submit">
+                    <button type="button" class="save edit__save">Сохранить</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- ==================Редактирование уведомления========================= -->
+
+
+
+        <!-- ==================Выбрать получателя========================= -->
+        <div class="whom_choose">
+           <center><h1>Выбрать получателя</h1></center>
+
+            <div class='whom_close'><i class='fas fa-times-circle'></i></div>
+
+            <div class="whom_search">
+                <input type="search" placeholder="Поиск по id/login">
+            </div>
+            
+            <div class="users_list">
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+                
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+                
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+                
+                <div class="user">
+                    <div class="logo"><img src="img/avatar.png"></div>
+                    <div class="login">Hamillioner</div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- ==================Выброать получателя========================= -->
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
